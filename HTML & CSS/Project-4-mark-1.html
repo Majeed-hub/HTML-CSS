@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+
+    <title>html identities & symbols</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border: black solid 3px;
+            padding: 7px;
+            border-collapse: collapse;
+        }
+
+        #table1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: auto;
+        }
+
+        th {
+            background-color: teal;
+            padding: 10px;
+        }
+
+        #altrows {
+            background-color: turquoise;
+        }
+
+        #money {
+            /* border-top: hidden;
+            border-bottom: hidden;
+            border-right: hidden; */
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            text-align: center;
+        }
+
+        p {
+            font-size: 22px;
+        }
+        #vertical {
+            text-orientation: upright;
+            writing-mode: vertical-lr;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML iedntities</h1>
+    <p> <b>Use&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b> Mainly used for special Symbols that are not present in keyboard
+    </p>
+    <p><b>Pattern: </b> &identity_name OR &#identity_number</p>
+
+    <h2>Examples</h2>
+    <table id="table1" >
+        <tr>
+            <th>sl.no</th>
+            <th>Name of Identities and Symbols </th>
+            <th>Pattern</th>
+            <th>Nature</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Blank spaces </td>
+            <td>A &nbsp;&nbsp;&nbsp;&nbsp; B</td>
+            <td>General</td>
+            
+        </tr>
+        <!-- For example spaces between A &nbsp;&nbsp;&nbsp; B </p>  -->
+        <tr id="altrows">
+            <td>2</td>
+            <td> Copyright symbol </td>
+            <td>&copy; OR &#169; </td>
+            <td rowspan="3">Related to company</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td> Trademark symbol </td>
+            <td> &trade; OR &#8482; </td>
+        </tr>
+        <tr id="altrows">
+            <td>4</td>
+            <td> Registered symbol </td>
+            <td>&reg; OR &#174;</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td> Euro </td>
+            <td> &euro; OR &#8364; </td>
+            <td rowspan="3" id="money">currency</td>
+        </tr>
+        <tr id="altrows">
+            <td>6</td>
+            <td>Pound </td>
+            <td>&pound; OR &#163;</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td> Rupee</td>
+            <td>&#8377;</td>
+        </tr>
+        <tr id="altrows">
+            <td colspan="2" style="font-size: 16px; text-align: center;" >Total number of identities and symbols
+            </td>
+            <td colspan="2" style=" text-align: center; ">7</td>
+        </tr>
+    </table>
+
+
+    <p id="vertical"> vertical orientation of text</p>
+</body>
+
+</html>

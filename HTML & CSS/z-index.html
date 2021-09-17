@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style> 
+    img{
+        position :absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    </style>
+</head>
+<body>
+    <h1>This a heading </h1>
+    <img src="images/restaurent.jpg" alt="" width="250px" height="200px">
+    <br><br><br>
+    <br><br><br>
+
+    
+    <p style="color: rgb(9, 12, 12);"> Because the image has the z index of -1, it will be placed behind the text.</p>
+    <p>
+        <strong>note:</strong> if two positioned elements overlap without a z-index specified , the element positioned last in the 
+        code shown on top.
+    </p>
+</body>
+</html>

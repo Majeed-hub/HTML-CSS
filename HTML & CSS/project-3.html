@@ -1,0 +1,75 @@
+<html lang="en">
+<!-- when you have only one tool hammer , every porblem looks like a nail -->
+<!-- todays topic
+    1.table
+    2. various tag for tables: table,tr,th,td,caption
+    3. colum spam and row span 
+    4. border collapse
+    5. new selector,  id, # is used to select the id
+    6. for aligning the table margin auto is used -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table,
+        td,
+        th {
+            border: solid 2px black;
+            border-collapse: collapse;
+        }
+
+        .toprow {
+            background-color: brown;
+        }
+
+        td {
+            padding: 4px;
+        }
+
+        .altrow {
+            background-color: burlywood;
+        }
+        table{
+            margin:auto;    
+            /* background-color: rgb(235, 168, 144); */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>table demo</h1>
+    <table>
+        <caption>progress report</caption>
+        <tr class="toprow">
+            <th>roll no</th>
+            <th>student name</th>
+            <th colspan="2">grade</th>
+            <th>course</th>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>majeed</td>
+            <td colspan="2">A+</td>
+            <td rowspan="3">web-design</td>
+
+        </tr>
+        <tr class="altrow" >
+            <td>2</td>
+            <td>afzan</td>
+            <td colspan="2">A+</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>sultan</td>
+            <td>A+</td>
+            <td >exellent</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

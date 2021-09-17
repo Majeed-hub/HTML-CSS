@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <title>Grid Layout Column Based</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:"Karla" ;
+            margin: 0;
+        }
+        h1 {
+            font-weight: 400;
+        }
+
+        /* For desktop: */
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+        /* content styling */
+
+         .header {
+            background-color:rgb(49, 91, 170) ;
+            text-align: center;
+            padding: 16px 0;
+            margin: 0;
+
+        }
+
+        
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu li {
+            background-color: cornflowerblue;
+            padding: 8px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        .menu li:hover{
+            background-color: rgb(49, 91, 170);
+        }
+        .aside {
+            background-color: cornflowerblue;
+            padding: 15px;
+            /* height: 340px; */
+            padding-bottom: 25px;
+            line-height: 1.5;
+           
+
+        }
+        footer {
+            background-color: cornflowerblue;
+            padding: 15px;
+            text-align: center;
+
+        }
+
+
+        [class*="col-" ] {
+            float: left;
+            padding: 15px;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        @media only screen and (max-width:675px)
+        {
+            /* mobile */
+            [class*="col-"]{
+                width: 100%;
+            }
+            .aside {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="header"> The Indian independence movement
+    </h1>
+    <div class="row">
+        <div class="col-3 menu">
+            
+            <ul>
+                <li><strong>People who played an inportant role in independing India</strong></li>
+                <li>Mahatma Ghandi</li>
+                <li>Subhas Chandra Bose</li>
+                <li>Jawaharlal Nehru</li>
+                <li>Bhagat Singh</li>
+            </ul>
+        </div>
+        <div class="col-6">
+            <h1>Becoming independent</h1>
+            <p>The Indian independence movement was a series of historic events with the ultimate aim of ending the
+                British rule in
+                India.</p> <p>  the movement spanned from 1857 to 1947. The first nationalistic revolutionary movement for
+                Indian independence
+                emerged from Bengal. It later took root in the newly formed Indian National Congress with prominent
+                moderate leaders
+                seeking only their fundamental right to appear for Indian Civil Service examinations in British India,
+                as well as more
+                rights (economical in nature) for the people of the soil. The early part of the 20th century saw a more
+                radical approach
+                towards political self-rule proposed by leaders such as the Lal Bal Pal triumvirate, Aurobindo Ghosh and
+                V. O.
+                Chidambaram Pillai.</p>
+                    <p>
+                The last stages of the self-rule struggle from the 1920s was characterized by Congress's adoption of
+                Mahatma Gandhi's
+                policy of non-violence and civil disobedience, and several other campaigns. Nationalists like Subhas
+                Chandra Bose,
+                Bhagat Singh, Bagha Jatin, Surya Sen preached armed revolution to achieve self-rule. Poets and writers
+                such as
+                Rabindranath Tagore, Subramania Bharati, Bankim Chandra Chattopadhyay and Kazi Nazrul Islam used
+                literature, poetry, and
+                speech as a tool for political awareness</p>
+        </div>
+       
+            <div class="col-3">
+                <div class="aside">
+                    <h3>Self-Rule Movement </h3>
+                The Indian self-rule movement was a mass-based movement that encompassed various sections of society. It
+                also underwent
+                a process of constant ideological evolution. Although the underlying ideology of the campaign was
+                anti-colonial, it was
+                supported by a vision of independent capitalist economic development coupled with a secular, democratic,
+                republican, and
+                civil-libertarian political structure
+            </div>
+        </div>
+    </div>
+    <footer>After the 1930s, the movement took on a strong socialist orientation. The work of these various movements
+        ultimately led
+        to the Indian Independence Act 1947, which ended the suzerainty in India, and the creation of Pakistan. India
+        remained a
+        Dominion of the Crown until 26 January 1950, when the Constitution of India came into force, establishing the
+        Republic
+        of India</footer>
+
+        <footer><strong>Resize the browser Window to see the effect of resizing</strong></footer>
+</body>
+
+</html>

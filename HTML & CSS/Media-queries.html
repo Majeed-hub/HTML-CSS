@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+        div.container {
+            display: flex;
+
+            flex-direction: row;
+            /* flex-direction: row-reverse;
+            flex-direction: row;
+            flex-direction: column-reverse; */
+            
+            justify-content: space-evenly;
+            box-sizing: border-box;
+
+             border: 2px solid red;
+            padding: 10px;
+            text-align: center;
+            align-content: center;
+            width: auto;
+        }
+          .flex-item{
+            border: red 1px solid;
+            flex-grow: 0;
+            flex-basis: 100px;
+            padding: 5px;
+
+        }
+        @media  only screen and (max-width: 600px)
+        {
+            div.container {
+            display: flex;
+
+            flex-direction: column;
+            /* flex-direction: row-reverse;
+            flex-direction: row;
+            flex-direction: column-reverse; */
+            
+            justify-content: space-evenly;
+            box-sizing: border-box;
+
+             border: 2px solid red;
+            padding: 10px;
+           
+          
+
+            width: auto;
+            
+            }
+
+            .flex-item{
+            border: red 1px solid;
+            flex-grow: 0;
+            flex-basis: 100px;
+            padding: 5px;
+            align-content:center;
+            
+
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-item item1">item 1</div>
+        <div class="flex-item item2">item 2</div>
+        <div class="flex-item item3"> item 3</div>
+        <div class="flex-item item4">item 4</div>
+    </div>
+</body>
+</html>

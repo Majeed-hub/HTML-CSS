@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External website on a new tab </title>
+
+
+
+    <!-- Tag to link external css file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fav-icon/favicon.ico" type="image/x-icon">
+
+  
+
+    <!-- internal CSS -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blueviolet;
+            background-image: linear-gradient( to right,rgb(95, 95, 170), rgb(146, 78, 146), rgb(161, 83, 83));
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <h1>Using img tag as a link</h1>
+    <h2> Click on the icons below to navigate </h2>
+    <a href="https://www.amazon.com/profile" target="_blank">
+        <img src="images/profile.jpg" style="height: 100px; width:100px; border-radius: 100px;" id="profile">
+    </a>
+    <a href="https://www.amazon.com/order">
+        <img src="images/place-order.png" style="height: 100px; width:100px;" id="plaice-order"></a>
+    <a href="https://www.amazon.com/track-order">
+        <img src="images/track-order.png" style="height: 100px; width:100px;" id="track-order"></a>
+    <br>
+
+    <label for="profile" style="margin-left: 30px;">Profile</label>
+    <label for="place-order" style="margin-left: 50px;">Your orders</label>
+    <label for="track-order" style="margin-left: 20px;">Track your order</label><br><br>
+
+    <p>Category of products, to purchase from amazon</p>
+    <a href="https://www.amazon.com/laptop" target="_blank">
+        <img src="images/laptop1.png" style="height: 100px; width:100px;" id="laptop">
+    </a>
+    <a href="https://www.amazon.com/desktop">
+        <img src="images/desktop.png" style="height: 100px; width:100px;" id="desktop">
+
+    </a>
+    <a href="https://www.amazon.com/mobile">
+        <img src="images/mobile.png" style="height: 100px; width:100px;" id="mobile">
+    </a>
+
+    <a href="https://www.amazon.com/clothes">
+        <img src="images/clothes.png" style="height: 100px; width:100px;" id="clothes">
+    </a>
+    <a href="https://www.amazon.com/grocery">
+        <img src="images/grocery.png" style="height: 100px; width:100px;" id="grocery">
+    </a><br>
+    <label for="laptop" style="margin-left: 30px;">Laptops</label>
+    <label for="desktop" style="margin-left: 50px;">Desktop</label>
+    <label for="mobile" style="margin-left: 30px;">Smart Phone</label>
+    <label for="clothes" style="margin-left: 40px;">Clothes</label>
+    <label for="grocery" style="margin-left: 50px;">Grocery</label>
+
+</body>
+
+</html>

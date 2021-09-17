@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box demo</title>
+    <style>
+        div.container {
+            display: flex;
+
+            flex-direction: row;
+            /* flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse */
+            ;
+            justify-content: space-evenly;
+            /* justify-content: space-around;
+            justify-content: space-between; */
+           
+           
+            width: 1000px;
+            border: 2px solid red;
+            padding: 10px;
+            text-align: center;
+
+
+            box-sizing: border-box;
+
+        }
+        .flex-item{
+            border: red 1px solid;
+            flex-grow: 0;
+            flex-basis: 100px;
+            padding: 5px;
+
+        }
+        /* .item1{
+            flex: 1;
+            order: 1;
+        }
+         .item2{
+            flex: 1;
+            order: 2;
+        }
+         .item3{
+            flex: 1;
+            order: 3;
+        }
+         .item4{
+            flex: 1;
+            order: 4;
+        } */
+    </style>
+</head>
+<body>
+    <h1>flex Box Demo</h1>
+    <div class="container">
+        <div class="flex-item item1">item 1</div>
+        <div class="flex-item item2">item 2</div>
+        <div class="flex-item item3"> item 3</div>
+        <div class="flex-item item4">item 4</div>
+    </div>
+</body>
+</html>

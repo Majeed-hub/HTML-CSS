@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav-icon/favicon.ico" type="image/x-icon">
+
+    <title>Form</title>
+    <style>
+        body {
+                   background-color: blueviolet;
+            background-image: linear-gradient( to right,rgb(95, 95, 170), rgb(146, 78, 146), rgb(161, 83, 83));
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Forms</h1>
+    <form action="action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname " name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br>
+        <label for="emailid">Email:</label><br>
+        <input type="email" id="emailid" name="email" value=""><br>
+        <label for="passwordid">password:</label><br>
+        <input type="password" id="passwordid" name="password" value=""><br><br>
+
+
+        <label for="city">city</label><br>
+        <input list="city">
+        <datalist  id="city">
+        <option value="Bhatkal">
+        <option value="Manglore">
+        <option value="Banglore">
+        <option value="Mumbai">
+        </datalist>
+
+        <br><br>
+        <label>Gender</label><br>
+        <input type="radio" id="male" name="male" value="male">
+        <label for="male">male</label>
+        <input type="radio" id="female" name="female" value="female">
+        <label for="female">female</label>
+         <input type="radio" id="other" name="other" value="other"> 
+        <label for="other">other</label>
+        <br><br>
+
+        <label>languages</label><br>
+        <input type="checkbox" id="Hindi" value="Hindi">
+        <label for="Hindi"> Hindi</label><br>
+        <input type="checkbox" id="English" value="English">
+        <label for="English"> English</label><br>
+        <input type="checkbox" id="Urdu" value="Urdu">
+        <label for="Urdu"> Urdu</label><br>
+        <input type="checkbox" id="kannada" value="kannada">
+        <label for="kannada"> kannada</label><br>
+
+        <br>
+        <label>Comment</label><br>
+        <textarea name="comment" id="comment" cols="25" rows="7" maxlength="100"></textarea>
+        <br><br>
+        <input type="submit" value="submit" >
+
+    </form>
+    <p>if you click the "Submit" button, the form data will be sent to a page called "action_page.php".</p>
+</body>
+
+</html>
